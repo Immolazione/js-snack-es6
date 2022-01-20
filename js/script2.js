@@ -9,6 +9,9 @@ Punti fatti e falli subiti.
 Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
 
+// FUNZIONA RANDOM
+function randomNumber(min, max){return Math.floor(Math.random() * (max - min) + min)};
+console.log(randomNumber(1, 10));
 
 // CREO ARRAY SQUADRE DI CALCIO 
 const footTeams = [
