@@ -18,9 +18,19 @@ const bicycles = [
 ];
 console.table(bicycles);
 
+// IMPOSTO IL VALORE INIZIALE COME VALORE MINIMO
+let actualWeight = bicycles[0].peso;
 
+// CICLO L'ARRAY
 for (i = 0; i < bicycles.length; i++){
-    [{peso}] = bicycles;
+
+    let peso = bicycles[i].peso;
+
+    // METTO A CONFRONTO
+    if (peso < actualWeight) {
+        actualWeight = peso;
+    }
+
 };
-const lessWeight = Math.min(peso);
-console.log(lessWeight);
+
+console.log(actualWeight);
