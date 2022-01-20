@@ -10,7 +10,7 @@ Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengo
 */
 
 // FUNZIONE RANDOM
-const randomNumber = (min, max) => {return Math.floor(Math.random() * (max - min) + min)};
+const randomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
 console.log(randomNumber(1, 10));
 
 // CREO ARRAY SQUADRE DI CALCIO 
@@ -21,4 +21,11 @@ const footTeams = [
     {squadra: 'sampdoria', puntiFatti: 0, falliSubiti: 0},
     {squadra: 'lazio', puntiFatti: 0, falliSubiti: 0}
 ];
+console.table(footTeams);
 
+// ASSEGNO NUMERI CASUALI AI DUE DATI
+for (i = 0; i < footTeams.length; i++) {
+    footTeams[i].puntiFatti= randomNumber(1, 10);
+    footTeams[i].falliSubiti= randomNumber(1, 10);
+};
+console.table(footTeams);
