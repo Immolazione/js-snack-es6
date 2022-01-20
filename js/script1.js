@@ -38,7 +38,7 @@ console.table(bicycles);
 // SOLUZIONE ALTERNATIVA TENENDO CONTO DELL'INDICE
 let minorPeso = 0;
 
-for (i = 0; i < bicycles.length - 1; i++) {
+for (i = 0; i < bicycles.length; i++) {
 
     if (bicycles[i].peso < bicycles[minorPeso].peso) {
         minorPeso = i;
