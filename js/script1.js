@@ -9,11 +9,18 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
 
 // ARRAY DI BICI
 const bicycles = [
-    {nome: 'bici1', peso: 20}, 
+    {nome: 'bici1', peso: 50}, 
     {nome: 'bici2', peso: 30}, 
     {nome: 'bici3', peso: 50}, 
     {nome: 'bici4', peso: 10}, 
     {nome: 'bici5', peso: 80}, 
     {nome: 'bici6', peso: 40}
 ];
+console.table(bicycles);
 
+
+for (i = 0; i < bicycles.length; i++){
+    [{peso}] = bicycles;
+};
+const lessWeight = Math.min(peso);
+console.log(lessWeight);
