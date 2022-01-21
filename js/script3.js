@@ -30,11 +30,9 @@ console.table(array);
 
 const selectedNumbers = ((array, min, max) => {
     const newArray = array.filter((element, index) => {
-        if (index >= min && index <= max) {
-            return true;
-        };
-        return false;
-    }); 
+        return (index >= min && index <= max) ? true : false;
+    });
+
     return newArray;
 });
 
