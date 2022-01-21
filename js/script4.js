@@ -25,10 +25,6 @@ const studenti = [
 console.table(studenti);
 
 // PRIMA LETTERA MAIUSCOLA, RESTO MINUSCOLO
-const targhe = studenti.map(({nome}) => {
-    let firstLetter = nome.charAt(0).toUpperCase();
-    let otherLetters = nome.substring(1).toLowerCase();
-    return firstLetter + otherLetters;
-});
+const targhe = studenti.map(({nome}) => nome.charAt(0).toUpperCase() + nome.substring(1).toLowerCase());
 
 console.table(targhe);
