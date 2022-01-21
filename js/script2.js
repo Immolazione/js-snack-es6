@@ -25,7 +25,21 @@ console.table(footTeams);
 
 // ASSEGNO NUMERI CASUALI AI DUE DATI
 for (let i = 0; i < footTeams.length; i++) {
-    footTeams[i].puntiFatti= randomNumber(1, 10);
-    footTeams[i].falliSubiti= randomNumber(1, 10);
+    const footTeam = footTeams[i];
+
+    footTeam.puntiFatti= randomNumber(1, 10);
+    footTeam.falliSubiti= randomNumber(1, 10);
 };
 console.table(footTeams);
+
+// CREO NUOVO ARRAY
+const newArray = [];
+
+for (let i = 0; i < footTeams.length; i++){
+    const footTeam = footTeams[i];
+    const { squadra, falliSubiti } = footTeam;
+    const newTeam = { squadra, falliSubiti };
+
+    newArray.push(newTeam);
+};
+console.table(newArray);
