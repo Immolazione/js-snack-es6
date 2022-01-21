@@ -28,3 +28,12 @@ console.table(studenti);
 const targhe = studenti.map(({nome}) => nome.charAt(0).toUpperCase() + nome.substring(1).toLowerCase());
 
 console.table(targhe);
+
+// CREO LISTE FILTRANDO I DATI
+
+// LISTA PER STUDENTI CON VOTO > 70 
+
+const sufficienza = studenti.filter(({voto}) => voto > 70);
+console.log(sufficienza);
+
+// LISTA PER STUDENTI CON VOTO > 70 && ID > 120
