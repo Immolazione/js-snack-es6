@@ -10,14 +10,37 @@ Usiamo i nuovi metodi degli array visti oggi in classe.
 const array = [3, 45, 3, 6, 1, 76, 34, 9, 10, 87, 234, 76];
 console.table(array);
 
-function selected(array, a, b){
-   array.forEach((item, a, b) => {
-    const newArray = array.filter((item, a, b) => {
-        if (item < a || item > b) {
-            return false
+// function selected(array, a, b){
+//    array.forEach((item, a, b) => {
+//     const newArray = array.filter((item, a, b) => {
+//         if (item < a || item > b) {
+//             return false
+//         };
+//         return newArray;
+//     });
+//     console.log(newArray);
+//    });
+// };
+
+// array.forEach((element, index) => {
+//     console.log(index);
+//     if ()
+// });
+
+
+const selectedNumbers = ((array, min, max) => {
+    const newArray = array.filter((element, index) => {
+        if (index >= min && index <= max) {
+            return true;
         };
-        return newArray;
-    });
-    console.log(newArray);
-   });
-};
+        return false;
+    }); 
+    return newArray;
+});
+
+console.table(selectedNumbers(array, 2, 5));
+
+
+
+
+
