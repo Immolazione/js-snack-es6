@@ -11,16 +11,24 @@ ES (marco de iulio => Marco de iulio);
 
 // ARRAY DI STUDENTI
 const studenti = [
-    {nome: 'Giulia', id: '100', voto: '50'},
-    {nome: 'Enrico', id: '200', voto: '80'},
-    {nome: 'Federico', id: '150', voto: '60'},
-    {nome: 'Marco', id: '70', voto: '75'},
-    {nome: 'Matteo', id: '20', voto: '100'},
-    {nome: 'Marco', id: '105', voto: '40'},
-    {nome: 'Ignazio', id: '80', voto: '95'},
-    {nome: 'Giulio', id: '120', voto: '25'},
-    {nome: 'Bernardo', id: '10', voto: '55'}
+    {nome: 'giulia', id: '100', voto: '50'},
+    {nome: 'enrico', id: '200', voto: '80'},
+    {nome: 'federico', id: '150', voto: '60'},
+    {nome: 'marco', id: '70', voto: '75'},
+    {nome: 'matteo', id: '20', voto: '100'},
+    {nome: 'marco', id: '105', voto: '40'},
+    {nome: 'ignazio', id: '80', voto: '95'},
+    {nome: 'giulio', id: '120', voto: '25'},
+    {nome: 'bernardo', id: '10', voto: '55'}
 ];
 
 console.table(studenti);
 
+// PRIMA LETTERA MAIUSCOLA, RESTO MINUSCOLO
+const targhe = studenti.map(({nome}) => {
+    let firstLetter = nome.charAt(0).toUpperCase();
+    let otherLetters = nome.substring(1).toLowerCase();
+    return firstLetter + otherLetters;
+});
+
+console.table(targhe);
