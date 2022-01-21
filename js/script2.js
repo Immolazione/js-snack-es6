@@ -24,7 +24,7 @@ const footTeams = [
 console.table(footTeams);
 
 // ASSEGNO NUMERI CASUALI AI DUE DATI
-for (i = 0; i < footTeams.length; i++) {
+for (let i = 0; i < footTeams.length; i++) {
     footTeams[i].puntiFatti= randomNumber(1, 10);
     footTeams[i].falliSubiti= randomNumber(1, 10);
 };
