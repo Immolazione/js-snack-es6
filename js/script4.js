@@ -37,3 +37,6 @@ const sufficienza = studenti.filter(({voto}) => voto > 70);
 console.log(sufficienza);
 
 // LISTA PER STUDENTI CON VOTO > 70 && ID > 120
+
+const sufficienzaConId = studenti.filter(({voto, id}) => voto > 70 && id > 120);
+console.log(sufficienzaConId);
