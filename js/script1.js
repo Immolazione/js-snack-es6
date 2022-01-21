@@ -46,4 +46,4 @@ for (let i = 0; i < bicycles.length; i++) {
 
 };
 
-console.log(bicycles[minorPeso].peso);
+console.log(`Peso Minore: ${bicycles[minorPeso].nome}, ${bicycles[minorPeso].peso} kg`);
