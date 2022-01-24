@@ -29,9 +29,7 @@ console.table(array);
 
 
 const selectedNumbers = ((array, min, max) => {
-    const newArray = array.filter((element, index) => {
-        return (index >= min && index <= max) ? true : false;
-    });
+    const newArray = array.filter((element, index) => (index >= min && index <= max) ? true : false);
 
     return newArray;
 });
